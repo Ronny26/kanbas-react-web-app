@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        table {
+          
+            width: 100%;
+        }
+        td {
+            
+            vertical-align: top; /* Align content to the top */
+        }
+        </style>
+    </head>
+    <body>
+        <table>
+            <tr class="row">
+                <!-- Apply the "row" class to all rows -->
+                <!-- First Column - Kanbas Navigation -->
+                <td>
+                    <ul class="navigation">
+                        <li>
+                            <a href="../profile/index.html">Account</a>
+                        </li>
+                        <li>
+                            <a href="#">Dashboard</a>
+                        </li>
+                        <li>
+                            <a href="../settings/coursedetails.html">Courses</a>
+                        </li>
+                        <li>
+                            <a href="#">Calendar</a>
+                        </li>
+                        <li>
+                            <a href="#">Inbox</a>
+                        </li>
+                        <li>
+                            <a href="#">History</a>
+                        </li>
+                        <li>
+                            <a href="#">Studio</a>
+                        </li>
+                        <li>
+                            <a href="#">Commons</a>
+                        </li>
+                        <li>
+                            <a href="#">Help</a>
+                        </li>
+                    </ul>
+                </td>
+                <!-- Second Column - Course Navigation -->
+                <td>
+                    <ul class="navigation">
+                        <li>
+                            <a href="../home.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Modules</a>
+                        </li>
+                        <li>
+                            <a href="#">Piazza</a>
+                        </li>
+                        <li>
+                            <a href="#">Zoom Meeting</a>
+                        </li>
+                        <li>
+                            <a href="assignments.html">Assignment</a>
+                        </li>
+                        <li>
+                            <a href="#">Quizes</a>
+                        </li>
+                        <li>
+                            <a href="../grades.html">Grades</a>
+                        </li>
+                        <li>
+                            <a href="#">People</a>
+                        </li>
+                        <li>
+                            <a href="#">Panapto Video</a>
+                        </li>
+                        <li>
+                            <a href="#">Discussion</a>
+                        </li>
+                        <li>
+                            <a href="#">Announcement</a>
+                        </li>
+                        <li>
+                            <a href="#">Pages</a>
+                        </li>
+                        <li>
+                            <a href="#">Files</a>
+                        </li>
+                        <li>
+                            <a href="#">Rubric</a>
+                        </li>
+                        <li>
+                            <a href="#">Outcomes</a>
+                        </li>
+                        <li>
+                            <a href="#">Collaborations</a>
+                        </li>
+                        <li>
+                            <a href="#">Syllabus</a>
+                        </li>
+                        <li>
+                            <a href="#">Settings</a>
+                        </li>
+                    </ul>
+                </td>
+                <!-- Third Column - Course Content -->
+                <td>
+                    <select>
+                        <option selected value="Speed Grader">
+                            Speed Grader
+                        </option>
+                        <option value="Duplicate">Delete</option>
+                        <option value="Duplicate">Move to..</option>
+                        <option value="Duplicate">Send to..</option>
+                        <option value="Duplicate">Copy to..</option>
+                        <option value="Duplicate">Share to commons</option>
+                    </select>
+                    <hr>
+                    <h3>Assignment Name</h3>
+                    <input
+                        type="text"
+                        id="text-fields-rating"
+                        placeholder="A1 - ENV + HTML"
+                        max="5"
+                    >
+                    <br>
+                    <br>
+                    <textarea cols="30" rows="10">This Is the Assignment Discription</textarea>
+                    <br>
+                    <br>
+                    <label>Points</label>
+                    <br>
+                    <input
+                        type="text"
+                        id="text-fields-rating"
+                        placeholder="100"
+                        max="5"
+                    >
+                    <br>
+                    <br>
+                    <label>Assignment Groups</label>
+                    <br>
+                    <select>
+                        <option selected value="Speed Grader">
+                            Speed Grader
+                        </option>
+                        <option value="Duplicate">Delete</option>
+                        <option value="Duplicate">Move to..</option>
+                        <option value="Duplicate">Send to..</option>
+                        <option value="Duplicate">Copy to..</option>
+                        <option value="Duplicate">Share to commons</option>
+                    </select>
+                    <br>
+                    <br>
+                    <label>Display Grades as</label>
+                    <br>
+                    <select>
+                        <option selected value="Speed Grader">
+                            Speed Grader
+                        </option>
+                        <option value="Duplicate">Delete</option>
+                        <option value="Duplicate">Move to..</option>
+                        <option value="Duplicate">Send to..</option>
+                        <option value="Duplicate">Copy to..</option>
+                        <option value="Duplicate">Share to commons</option>
+                    </select>
+                    <br>
+                    <br>
+                    <label>Submission type</label>
+                    <br>
+                    <select>
+                        <option selected value="Speed Grader">
+                            Speed Grader
+                        </option>
+                        <option value="Duplicate">Delete</option>
+                        <option value="Duplicate">Move to..</option>
+                        <option value="Duplicate">Send to..</option>
+                        <option value="Duplicate">Copy to..</option>
+                        <option value="Duplicate">Share to commons</option>
+                    </select>
+                    <br>
+                    <br>
+                    <label>Online Entry Options</label>
+                    <br>
+                    <input
+                        type="checkbox"
+                        value="COMEDY"
+                        name="check-genre"
+                        id="chkbox-comedy"
+                        checked
+                    >
+                    <label for="chkbox-comedy">Comedy</label>
+                    <br>
+                    <input
+                        type="checkbox"
+                        value="DRAMA"
+                        name="check-genre"
+                        id="chkbox-drama"
+                    >
+                    <label for="chkbox-drama">Drama</label>
+                    <br>
+                    <input
+                        type="checkbox"
+                        value="SCIFI"
+                        name="check-genre"
+                        id="chkbox-scifi"
+                        checked
+                    >
+                    <label for="chkbox-scifi">Science Fiction</label>
+                    <br>
+                    <input
+                        type="checkbox"
+                        value="FANTASY"
+                        name="check-genre"
+                        id="chkbox-fantasy"
+                    >
+                    <label for="chkbox-fantasy">Fantasy</label>
+                    <br>
+                    <br>
+                    <label>Submission Attemps</label>
+                    <br>
+                    <select>
+                        <option selected value="Speed Grader">
+                            Speed Grader
+                        </option>
+                        <option value="Duplicate">Delete</option>
+                        <option value="Duplicate">Move to..</option>
+                        <option value="Duplicate">Send to..</option>
+                        <option value="Duplicate">Copy to..</option>
+                        <option value="Duplicate">Share to commons</option>
+                    </select>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <label>Plagiarism Review</label>
+                    <br>
+                    <select>
+                        <option selected value="Speed Grader">
+                            Speed Grader
+                        </option>
+                        <option value="Duplicate">Delete</option>
+                        <option value="Duplicate">Move to..</option>
+                        <option value="Duplicate">Send to..</option>
+                        <option value="Duplicate">Copy to..</option>
+                        <option value="Duplicate">Share to commons</option>
+                    </select>
+                    <br>
+                    <br>
+                    <label>Group Assignment</label>
+                    <br>
+                    <input
+                        type="checkbox"
+                        value="COMEDY"
+                        name="check-genre"
+                        id="chkbox-comedy"
+                        checked
+                    >
+                    <label for="chkbox-comedy">Comedy</label>
+                    <br>
+                    <br>
+                    <label>Peer Review</label>
+                    <br>
+                    <input
+                        type="checkbox"
+                        value="COMEDY"
+                        name="check-genre"
+                        id="chkbox-comedy"
+                        checked
+                    >
+                    <label for="chkbox-comedy">Comedy</label>
+                    <br>
+                    <br>
+                    <br>
+                    <label>
+                        Assign
+                        <br>
+                        Assign to
+                    </label>
+                    <br>
+                    <input type="text" value="Everyone">
+                    <br>
+                    <br>
+                    <label>Due</label>
+                    <br>
+                    <input type="date" value="Everyone">
+                    <br>
+                    <br>
+                    <label>Available from</label>
+                    <br>
+                    <input type="date" value="Everyone">
+                    <br>
+                    <br>
+                    <label>Until</label>
+                    <br>
+                    <input type="date" value="Everyone">
+                    <br>
+                    <br>
+                    <button>Cancel</button>
+                    <button>Save</button>
+                </body>
+            </html>
