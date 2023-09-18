@@ -115,55 +115,91 @@
                     <a href="coursedetails.html">Feature Options</a>
                     <a href="coursedetails.html">Integration</a>
                     <h2>Course Details</h2>
-                    <label>Image:</label>
-                    <div style="border: 40px solid #ccc; padding: 10px; display: inline-block;">
-                        <input type="file" id="imageInput" style="display: none;">
-                        <label for="imageInput" class="custom-file-upload">Choose Image</label>
-                    </div>
-                    <br>
-                    <br>
-                    <label>Name:</label>
-                    <label>       CS4550 Web Developement</label>
-                    <br>
-                    <br>
-                    <label>Course Code:</label>
-                    <label>       CS4550.12631</label>
-                    <br>
-                    <br>
-                    <label>Blueprint Course:</label>
-                    <label>      No</label>
-                    <br>
-                    <br>
-                    <label>Course Template:</label>
-                    <label>       Enable Course as a Course Template</label>
-                    <br>
-                    <br>
-                    <label>Time Zone:</label>
-                    <select>
-                        <option value="COMEDY">Comedy</option>
-                        <option value="DRAMA">Drama</option>
-                        <option selected value="SCIFI">
-                            Eastern Time
-                        </option>
-                        <option value="FANTASY">Configure</option>
-                    </select>
-                    <br>
-                    <br>
-                    <label>SIS ID:</label>
-                    <label>CS5600.3923923</label>
-                    <br>
-                    <br>
-                    <label>Sub Account:</label>
-                    <a href="#">
-                        <label>CS Undergrad</label>
-                    </a>
-                    <br>
-                    <br>
-                    <label>Term:</label>
-                    <label>CS5600 Fall 2023</label>
-                    <br>
-                    <br>
                     <table>
+                        <tr>
+                            <td>
+                                <label>Image:</label>
+                            </td>
+                            <td>
+                                <div style="border: 40px solid #ccc; padding: 10px; display: inline-block;">
+                                    <input type="file" id="imageInput" style="display: none;">
+                                    <label for="imageInput" class="custom-file-upload">Choose Image</label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Name:</label>
+                            </td>
+                            <td>
+                                <label>       CS4550 Web Developement</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Course Code:</label>
+                            </td>
+                            <td>
+                                <label>       CS4550.12631</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Blueprint Course:</label>
+                            </td>
+                            <td>
+                                <label>No</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Course Template:</label>
+                            </td>
+                            <td>
+                                <label>       Enable Course as a Course Template</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Time Zone:</label>
+                            </td>
+                            <td>
+                                <select>
+                                    <option value="COMEDY">Comedy</option>
+                                    <option value="DRAMA">Drama</option>
+                                    <option selected value="SCIFI">
+                                        Eastern Time
+                                    </option>
+                                    <option value="FANTASY">Configure</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>SIS ID:</label>
+                            </td>
+                            <td>
+                                <label>CS5600.3923923</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Sub Account:</label>
+                            </td>
+                            <td>
+                                <a href="#">
+                                    <label>CS Undergrad</label>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Term:</label>
+                            </td>
+                            <td>
+                                <label>CS5600 Fall 2023</label>
+                            </td>
+                        </tr>
                         <tr>
                             <td>
                                 <label>Participation:</label>
@@ -207,10 +243,8 @@
                                 <br>
                             </td>
                         </tr>
-                    </table>
-                    <br>
-                    <br>
-                    <table>
+                        <br>
+                        <br>
                         <tr>
                             <td>
                                 <label>Default due time:</label>
@@ -228,10 +262,6 @@
                                 <label>This influence the user interface for setting due date</label>
                             </td>
                         </tr>
-                    </table>
-                    <br>
-                    <br>
-                    <table>
                         <tr>
                             <td>
                                 <label>Language:</label>
@@ -249,58 +279,71 @@
                                 <label>This will override any system language preferance</label>
                             </td>
                         </tr>
-                    </table>
-                    <br>
-                    <br>
-                    <label>File Storage:</label>
-                    <label>10000 megabytes</label>
-                    <br>
-                    <br>
-                    <label>Large Course:</label>
-                    <input
-                        type="checkbox"
-                        value="student"
-                        name="check"
-                        id="chkbox"
-                    >
-                    <label for="chkbox">Launch Speed Grader filtered by student group</label>
-                    <br>
-                    <br>
-                    <br>
-                    <label>Grading Scheme:</label>
-                    <input
-                        type="checkbox"
-                        value="student"
-                        name="check"
-                        id="chkbox"
-                    >
-                    <label for="chkbox">Enable course grading scheme</label>
-                    <br>
-                    <br>
-                    <br>
-                    <label>Licence:</label>
-                    <select>
-                        <option value="COMEDY">Comedy</option>
-                        <option value="DRAMA">Drama</option>
-                        <option selected value="SCIFI">
-                            Private (copyrighted)
-                        </option>
-                        <option value="FANTASY">Configure</option>
-                    </select>
-                    <br>
-                    <br>
-                    <label>File Copyright:</label>
-                    <input
-                        type="checkbox"
-                        value="student"
-                        name="check"
-                        id="chkbox"
-                    >
-                    <label for="chkbox">Copyright and licence information</label>
-                    <br>
-                    <br>
-                    <br>
-                    <table>
+                        <tr>
+                            <td>
+                                <label>File Storage:</label>
+                            </td>
+                            <td>
+                                <label>10000 megabytes</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Large Course:</label>
+                            </td>
+                            <td>
+                                <input
+                                    type="checkbox"
+                                    value="student"
+                                    name="check"
+                                    id="chkbox"
+                                >
+                                <label for="chkbox">Launch Speed Grader filtered by student group</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Grading Scheme:</label>
+                            </td>
+                            <td>
+                                <input
+                                    type="checkbox"
+                                    value="student"
+                                    name="check"
+                                    id="chkbox"
+                                >
+                                <label for="chkbox">Enable course grading scheme</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Licence:</label>
+                            </td>
+                            <td>
+                                <select>
+                                    <option value="COMEDY">Comedy</option>
+                                    <option value="DRAMA">Drama</option>
+                                    <option selected value="SCIFI">
+                                        Private (copyrighted)
+                                    </option>
+                                    <option value="FANTASY">Configure</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>File Copyright:</label>
+                            </td>
+                            <td>
+                                <input
+                                    type="checkbox"
+                                    value="student"
+                                    name="check"
+                                    id="chkbox"
+                                >
+                                <label for="chkbox">Copyright and licence information</label>
+                            </td>
+                        </tr>
                         <tr>
                             <td>
                                 <label>Visibility:</label>
@@ -327,35 +370,46 @@
                                 <br>
                             </td>
                         </tr>
+                        <tr>
+                            <td>
+                                <label>Format:</label>
+                            </td>
+                            <td>
+                                <select>
+                                    <option value="COMEDY">Comedy</option>
+                                    <option value="DRAMA">Drama</option>
+                                    <option selected value="SCIFI">
+                                        On-Campus
+                                    </option>
+                                    <option value="FANTASY">Configure</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Mastery Paths:</label>
+                            </td>
+                            <td>
+                                <input
+                                    type="checkbox"
+                                    value="student"
+                                    name="check"
+                                    id="chkbox"
+                                >
+                                <label for="chkbox">Enable indivisual learning path</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Description:</label>
+                            </td>
+                            <td>
+                                <textarea></textarea>
+                                <br>
+                                <a href="#">More Options</a>
+                            </td>
+                        </tr>
                     </table>
-                    <br>
-                    <br>
-                    <label>Format:</label>
-                    <select>
-                        <option value="COMEDY">Comedy</option>
-                        <option value="DRAMA">Drama</option>
-                        <option selected value="SCIFI">
-                            On-Campus
-                        </option>
-                        <option value="FANTASY">Configure</option>
-                    </select>
-                    <br>
-                    <br>
-                    <label>Mastery Paths:</label>
-                    <input
-                        type="checkbox"
-                        value="student"
-                        name="check"
-                        id="chkbox"
-                    >
-                    <label for="chkbox">Enable indivisual learning path</label>
-                    <br>
-                    <br>
-                    <br>
-                    <label>Description:</label>
-                    <textarea></textarea>
-                    <br>
-                    <a href="#">More Options</a>
                 </td>
             </table>
         </body>
