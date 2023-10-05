@@ -1,167 +1,219 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <style>
-        table {
-          
-            width: 100%;
-        }
-        td {
-            
-            vertical-align: top; /* Align content to the top */
-        }
-        </style>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        >
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <link href="../../vendors/fontawesome/css copy/font-awesome.css" rel="stylesheet">
+        <link href="../../style.css" rel="stylesheet">
     </head>
     <body>
-        <table>
-            <tr class="row">
-                <!-- Apply the "row" class to all rows -->
-                <!-- First Column - Kanbas Navigation -->
-                <td>
-                    <ul class="navigation">
-                        <li>
-                            <a href="index.html">Account</a>
-                        </li>
-                        <li>
-                            <a href="#">Dashboard</a>
-                        </li>
-                        <li>
-                            <a href="../settings/coursedetails.html">Courses</a>
-                        </li>
-                        <li>
-                            <a href="#">Calendar</a>
-                        </li>
-                        <li>
-                            <a href="#">Inbox</a>
-                        </li>
-                        <li>
-                            <a href="#">History</a>
-                        </li>
-                        <li>
-                            <a href="#">Studio</a>
-                        </li>
-                        <li>
-                            <a href="#">Commons</a>
-                        </li>
-                        <li>
-                            <a href="#">Help</a>
-                        </li>
-                    </ul>
-                </td>
-                <!-- Second Column - Course Navigation -->
-                <td>
-                    <ul class="navigation">
-                        <li>
-                            <a href="#">Notifications</a>
-                        </li>
-                        <li>
-                            <a href="index.html">Profile</a>
-                        </li>
-                        <li>
-                            <a href="#">Files</a>
-                        </li>
-                        <li>
-                            <a href="#">Settings</a>
-                        </li>
-                        <li>
-                            <a href="../assignments/assignments.html">Assignment</a>
-                        </li>
-                        <li>
-                            <a href="#">E-Portfolio</a>
-                        </li>
-                        <li>
-                            <a href="">Shared content</a>
-                        </li>
-                        <li>
-                            <a href="#">The Hub</a>
-                        </li>
-                        <li>
-                            <a href="#">Qwickly course tools</a>
-                        </li>
-                        <li>
-                            <a href="#">Global Announcements</a>
-                        </li>
-                    </ul>
-                </td>
-                <td>
-                    <h2>
-                        Priyanshu Srivastava
-                    </h2>
-                    <label>Name:*</label>
-                    <input type="text" value="Priyanshu">
-                    <label>Pronouns:*</label>
-                    <select>
-                        <option value="COMEDY">Comedy</option>
-                        <option value="DRAMA">Drama</option>
-                        <option selected value="None">
-                            None
-                        </option>
-                        <option value="FANTASY">Configure</option>
-                    </select>
-                    <br>
-                    <br>
-                    <label>Title:*</label>
-                    <input type="text">
-                    <h3>
-                        Contact
-                    </h3>
-                    <label>No Registered Services</label>
-                    <br>
-                    <br>
-                    <h3>
-                        Contact
-                    </h3>
-                    <label>No Registered Services</label>
-                    <br>
-                    <br>
-                    <h3>
-                        Biography
-                    </h3>
-                    <label>
-                        Student of Khoury College of Computer Science
-                    </label>
-                    <br>
-                    <textarea>Hello baad me bharta hu</textarea>
-                    <br>
-                    <br>
-                    <h3>
-                        Links
-                    </h3>
-                    <label>
-                        <ul>
-                            <li>
-                                <a href="#">Youtube links to external website</a>
-                            </li>
-                        </ul>
-                    </label>
-                    <table border="0">
-                        <td>
-                            <h3>
-                                Title
-                            </h3>
-                            <input type="text" placeholder="title">
-                            <label>-></label>
-                        </td>
-                        <td>
-                            <h3>
-                                URL
-                            </h3>
-                            <input type="text" placeholder="URL">
-                            <a href="#">remove</a>
-                        </td>
-                    </table>
-                    <button>Add Another Link</button>
-                    <br>
-                    <button>Cancel</button>
+        <div class="wd-flex-title-container">
+            <div>
+                <img
+                    src="https://instructure-uploads.s3.amazonaws.com/account_145230000000000001/attachments/949/NU_MonoLVX_RGB_RW.png"
+                    alt="Description_of_the_image"
+                    width="80"
+                    height="80"
+                >
+            </div>
+            <div class="wd-flex-grow-1">
+                <a href="edit.html">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </a>
+                <label>Priyanshu Srivastava's Profile</label>
+                <hr style="margin: 0px; margin-left:35px; margin-right: 35px;">
+            </div>
+        </div>
+        <div class="wd-flex-row-cotainer">
+            <div class="wd-color-black">
+                <ul class="wd-kanbas-navigation">
+                    <li class="wd-active">
+                        <a href="profile/index.html">
+                            <i class="fa fa-user-circle-o" aria-hidden="true" style="color: lightgray;"></i>
+                            Account
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../dashboard/index.html">
+                            <i class="fa fa-tachometer" aria-hidden="true"></i>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../home.html">
+                            <i class="fa fa-book" aria-hidden="true"></i>
+                            Courses
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                            Calendar
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-inbox" aria-hidden="true"></i>
+                            Inbox
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-history" aria-hidden="true"></i>
+                            History
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-television" aria-hidden="true"></i>
+                            Studio
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-sign-out" aria-hidden="true"></i>
+                            Commons
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-question-circle" aria-hidden="true"></i>
+                            Help
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul class="wd-course-navigation">
+                    <li>
+                        <a href="#">Notifications</a>
+                    </li>
+                    <li class="wd-active">
+                        <a href="index.html">Profile</a>
+                    </li>
+                    <li>
+                        <a href="#">Files</a>
+                    </li>
+                    <li>
+                        <a href="#">Settings</a>
+                    </li>
+                    <li>
+                        <a href="../assignments/assignments.html">Assignment</a>
+                    </li>
+                    <li>
+                        <a href="#">E-Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="">Shared content</a>
+                    </li>
+                    <li>
+                        <a href="#">The Hub</a>
+                    </li>
+                    <li>
+                        <a href="#">Qwickly course tools</a>
+                    </li>
+                    <li>
+                        <a href="#">Global Announcements</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="wd-main-navigation">
+                <div class="wd-flex-row-main-cotainer">
+                    <div>
+                        <i class="fa fa-user-circle-o" aria-hidden="true" style="color: lightgray;"></i>
+                    </div>
+                </div>
+                <label class="label-main">Name:*</label>
+                <br>
+                <input
+                    type="text"
+                    value="Priyanshu"
+                    class="form-label"
+                    style="width: 400px;"
+                >
+                <br>
+                <label class="label-main">Pronouns:</label>
+                <br>
+                <select class="form-select" style="width: 300px;">
+                    <option value="COMEDY">Comedy</option>
+                    <option value="DRAMA">Drama</option>
+                    <option selected value="None">
+                        None
+                    </option>
+                    <option value="FANTASY">Configure</option>
+                </select>
+                <br>
+                <label>Title:*</label>
+                <br>
+                <input type="text" class="form-label" style="width: 400px;">
+                <br>
+                <br>
+                <h3>
+                    Contact
+                </h3>
+                <label>
+                    No Registered Services
+                    <a href="../settings/coursedetails.html" style="margin-left: 0px;"> settings</a>
+                    page
+                </label>
+                <br>
+                <br>
+                <h3>
+                    Biography
+                </h3>
+                <textarea class="form-textarea" style="width: 400px; height: 100px;">This is a biography of Priyanshu Srivastava</textarea>
+                <br>
+                <br>
+                <h3>
+                    Links
+                </h3>
+                <table class="table" style="width: 400px;">
+                    <thead>
+                        <tr style="border: none;">
+                            <th style="border: none; text-align: center;">
+                                <b>Title</b>
+                            </th>
+                            <th style="border: none;  text-align: center;">
+                                <b>URL</b>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="border: none;">
+                                <input type="text" placeholder="Youtube">
+                                <span>
+                                    --
+                                </span>
+                            </td>
+                            <td style="border: none;">
+                                <input type="text" placeholder="https://www.pdaddad.com">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button>Add Another Link</button>
+                <hr>
+                <button class="float-end" style="margin-left: 2px;">Save Profile</button>
+                <a href="index.html">
+                    <button class="float-end" style="color: white; background-color: red;">Cancel</button>
+                </a>
+            </div>
+            <div>
+                <form action="index.html">
                     <a href="index.html">
-                        <button>Save Profile</button>
+                        <button class="flex-end" type="submit" style="margin-top: 40px;">
+                            <i class="fa fa-pencil" aria-hidden="true"></i>
+                            Cancel Editing
+                        </button>
                     </a>
-                    <br>
-                    <button>Edit Profile</button>
-                    <a href="index.html">
-                        <button>Cancel Editing</button>
-                    </a>
-                </td>
-            </table>
-        </body>
-    </html>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

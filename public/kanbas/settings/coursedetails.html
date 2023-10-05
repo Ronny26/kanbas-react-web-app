@@ -1,416 +1,532 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <style>
-        table {
-          
-            width: 100%;
-        }
-        td {
-            
-            vertical-align: top; /* Align content to the top */
-        }
-        </style>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        >
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <link href="../../vendors/fontawesome/css copy/font-awesome.css" rel="stylesheet">
+        <link href="../../style.css" rel="stylesheet">
     </head>
     <body>
-        <table>
-            <tr class="row">
-                <!-- Apply the "row" class to all rows -->
-                <!-- First Column - Kanbas Navigation -->
-                <td>
-                    <ul class="navigation">
-                        <li>
-                            <a href="../profile/index.html">Account</a>
-                        </li>
-                        <li>
-                            <a href="#">Dashboard</a>
-                        </li>
-                        <li>
-                            <a href="coursedetails.html">Courses</a>
-                        </li>
-                        <li>
-                            <a href="#">Calendar</a>
-                        </li>
-                        <li>
-                            <a href="#">Inbox</a>
-                        </li>
-                        <li>
-                            <a href="#">History</a>
-                        </li>
-                        <li>
-                            <a href="#">Studio</a>
-                        </li>
-                        <li>
-                            <a href="#">Commons</a>
-                        </li>
-                        <li>
-                            <a href="#">Help</a>
-                        </li>
-                    </ul>
-                </td>
-                <!-- Second Column - Course Navigation -->
-                <td>
-                    <ul class="navigation">
-                        <li>
-                            <a href="../home.html">Home</a>
-                        </li>
-                        <li>
-                            <a href="#">Modules</a>
-                        </li>
-                        <li>
-                            <a href="#">Piazza</a>
-                        </li>
-                        <li>
-                            <a href="#">Zoom Meeting</a>
-                        </li>
-                        <li>
-                            <a href="../assignments/assignments.html">Assignment</a>
-                        </li>
-                        <li>
-                            <a href="#">Quizes</a>
-                        </li>
-                        <li>
-                            <a href="../grades.html">Grades</a>
-                        </li>
-                        <li>
-                            <a href="#">People</a>
-                        </li>
-                        <li>
-                            <a href="#">Panapto Video</a>
-                        </li>
-                        <li>
-                            <a href="#">Discussion</a>
-                        </li>
-                        <li>
-                            <a href="#">Announcement</a>
-                        </li>
-                        <li>
-                            <a href="#">Pages</a>
-                        </li>
-                        <li>
-                            <a href="#">Files</a>
-                        </li>
-                        <li>
-                            <a href="#">Rubric</a>
-                        </li>
-                        <li>
-                            <a href="#">Outcomes</a>
-                        </li>
-                        <li>
-                            <a href="#">Collaborations</a>
-                        </li>
-                        <li>
-                            <a href="#">Syllabus</a>
-                        </li>
-                        <li>
-                            <a href="#">Settings</a>
-                        </li>
-                    </ul>
-                </td>
-                <td>
-                    <a href="coursedetails.html">Course Details</a>
-                    <a href="coursedetails.html">Sections</a>
-                    <a href="navigation.html">Navigation</a>
-                    <a href="coursedetails.html">Apps</a>
-                    <a href="coursedetails.html">Feature Options</a>
-                    <a href="coursedetails.html">Integration</a>
-                    <h2>Course Details</h2>
-                    <table>
-                        <tr>
-                            <td>
-                                <label>Image:</label>
-                            </td>
-                            <td>
-                                <div style="border: 40px solid #ccc; padding: 10px; display: inline-block;">
-                                    <input type="file" id="imageInput" style="display: none;">
-                                    <label for="imageInput" class="custom-file-upload">Choose Image</label>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label>Name:</label>
-                            </td>
-                            <td>
-                                <label>       CS4550 Web Developement</label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label>Course Code:</label>
-                            </td>
-                            <td>
-                                <label>       CS4550.12631</label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label>Blueprint Course:</label>
-                            </td>
-                            <td>
-                                <label>No</label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label>Course Template:</label>
-                            </td>
-                            <td>
-                                <label>       Enable Course as a Course Template</label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label>Time Zone:</label>
-                            </td>
-                            <td>
-                                <select>
-                                    <option value="COMEDY">Comedy</option>
-                                    <option value="DRAMA">Drama</option>
-                                    <option selected value="SCIFI">
-                                        Eastern Time
-                                    </option>
-                                    <option value="FANTASY">Configure</option>
-                                </select>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label>SIS ID:</label>
-                            </td>
-                            <td>
-                                <label>CS5600.3923923</label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label>Sub Account:</label>
-                            </td>
-                            <td>
-                                <a href="#">
-                                    <label>CS Undergrad</label>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label>Term:</label>
-                            </td>
-                            <td>
-                                <label>CS5600 Fall 2023</label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label>Participation:</label>
-                            </td>
-                            <td>
-                                <select>
-                                    <option value="COMEDY">Comedy</option>
-                                    <option value="DRAMA">Drama</option>
-                                    <option selected value="SCIFI">
-                                        Term
-                                    </option>
-                                    <option value="FANTASY">Configure</option>
-                                </select>
+        <nav class="navbar d-sm-none">
+            <div class="navbar-icon">
+                <a href="../kanbas.html">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div class="navbar-title" style="display: block; text-align: center;">
+                CS5200.MERGED.202330
+                <br>
+                HOME
+            </div>
+            <div class="navbar-icon">
+                <a href="../course.html">
+                    <i class="fa fa-binoculars" aria-hidden="true"></i>
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </a>
+            </div>
+        </nav>
+        <div class="wd-flex-title-container wd-flex-title-container-home">
+            <div class=" d-none d-sm-block">
+                <img
+                    src="https://instructure-uploads.s3.amazonaws.com/account_145230000000000001/attachments/949/NU_MonoLVX_RGB_RW.png"
+                    alt="Description_of_the_image"
+                    width="80"
+                    height="80"
+                >
+            </div>
+            <div class="wd-flex-grow-1 d-none d-sm-block">
+                <i class="fa fa-bars" aria-hidden="true">
+                    <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="#">CS5200.MERGED.202330</a>
+                            </li>
+                            <li class="breadcrumb-item active" aria-current="page">Settings</li>
+                        </ol>
+                    </nav>
+                </i>
+                <hr style="margin: 0px; margin-left:35px;">
+            </div>
+        </div>
+        <div class="wd-flex-row-cotainer">
+            <div class="wd-color-black d-none d-sm-block">
+                <ul class="wd-kanbas-navigation">
+                    <li>
+                        <a href="../profile/index.html">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                            Account
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../dashboard/index.html">
+                            <i class="fa fa-tachometer" aria-hidden="true"></i>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li class="wd-active">
+                        <a href="../home.html">
+                            <i class="fa fa-book" aria-hidden="true"></i>
+                            Courses
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                            Calendar
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-inbox" aria-hidden="true"></i>
+                            Inbox
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-history" aria-hidden="true"></i>
+                            History
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-television" aria-hidden="true"></i>
+                            Studio
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-sign-out" aria-hidden="true"></i>
+                            Commons
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-question-circle" aria-hidden="true"></i>
+                            Help
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="d-none d-sm-block">
+                <span class="section-tabs-header-subtitle ellipsis">202410_2 Fall 2023 Semest...</span>
+                <ul class="wd-course-navigation">
+                    <li>
+                        <a href="../home.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Modules</a>
+                    </li>
+                    <li>
+                        <a href="#">Piazza</a>
+                    </li>
+                    <li>
+                        <a href="#">Zoom Meeting</a>
+                    </li>
+                    <li>
+                        <a href="../assignments/assignments.html">Assignment</a>
+                    </li>
+                    <li>
+                        <a href="#">Quizes</a>
+                    </li>
+                    <li>
+                        <a href="../grades.html">Grades</a>
+                    </li>
+                    <li>
+                        <a href="#">People</a>
+                    </li>
+                    <li>
+                        <a href="#">Panapto Video</a>
+                    </li>
+                    <li style="width: inherit">
+                        <div>
+                            <a href="#">
+                                Discussion
+                                <i class="fa fa-eye-slash float-end" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <li style="width: inherit">
+                        <div>
+                            <a href="#">
+                                Announcements
+                                <i class="fa fa-eye-slash float-end" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <li style="width: inherit">
+                        <div>
+                            <a href="#">
+                                Pages
+                                <i class="fa fa-eye-slash float-end" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <li style="width: inherit">
+                        <div>
+                            <a href="#">
+                                Files
+                                <i class="fa fa-eye-slash float-end" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <li style="width: inherit">
+                        <div>
+                            <a href="#">
+                                Rubrics
+                                <i class="fa fa-eye-slash float-end" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <li style="width: inherit">
+                        <div>
+                            <a href="#">
+                                Outcome
+                                <i class="fa fa-eye-slash float-end" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <li style="width: inherit">
+                        <div>
+                            <a href="#">
+                                Collaboration
+                                <i class="fa fa-eye-slash float-end" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <li style="width: inherit">
+                        <div>
+                            <a href="#">
+                                Syllabus
+                                <i class="fa fa-eye-slash float-end" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="wd-active">
+                        <a href="../settings/coursedetails.html">Settings</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="wd-flex-grow-1 course-det">
+                <table class="table">
+                    <tr class="row">
+                        <td style="margin-left: 50px;" class="nav-td">
+                            <a href="coursedetails.html">Course Details</a>
+                            <a href="coursedetails.html">Sections</a>
+                            <a href="navigation.html">Navigation</a>
+                            <a href="coursedetails.html">Apps</a>
+                            <a href="coursedetails.html">Feature Options</a>
+                            <a href="coursedetails.html">Integration</a>
+                            <h2 style="padding-top:30px;">Course Details</h2>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <label>Image:</label>
+                                    </td>
+                                    <td>
+                                        <div style="border: 40px solid #ccc; padding: 10px; display: inline-block;">
+                                            <input type="file" id="imageInput" style="display: none;">
+                                            <label for="imageInput" class="custom-file-upload">Choose Image</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label>Name:</label>
+                                    </td>
+                                    <td>
+                                        <label>       CS4550 Web Developement</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label>Course Code:</label>
+                                    </td>
+                                    <td>
+                                        <label>       CS4550.12631</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label>Blueprint Course:</label>
+                                    </td>
+                                    <td>
+                                        <label>No</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label>Course Template:</label>
+                                    </td>
+                                    <td>
+                                        <label>       Enable Course as a Course Template</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label>Time Zone:</label>
+                                    </td>
+                                    <td>
+                                        <select class="form-select form-control">
+                                            <option value="COMEDY">Comedy</option>
+                                            <option value="DRAMA">Drama</option>
+                                            <option selected value="SCIFI">
+                                                Eastern Time
+                                            </option>
+                                            <option value="FANTASY">Configure</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label>SIS ID:</label>
+                                    </td>
+                                    <td>
+                                        <label>CS5600.3923923</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label>Sub Account:</label>
+                                    </td>
+                                    <td>
+                                        <a href="#">
+                                            <label>CS Undergrad</label>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label>Term:</label>
+                                    </td>
+                                    <td>
+                                        <label>CS5600 Fall 2023</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label>Participation:</label>
+                                    </td>
+                                    <td>
+                                        <select class="form-select form-control">
+                                            <option value="COMEDY">Comedy</option>
+                                            <option value="DRAMA">Drama</option>
+                                            <option selected value="SCIFI">
+                                                Term
+                                            </option>
+                                            <option value="FANTASY">Configure</option>
+                                        </select>
+                                        <br>
+                                        <label>Course participation is limited to term start and end date</label>
+                                        <br>
+                                        <br>
+                                        <h3>Start</h3>
+                                        <input type="datetime-local">
+                                        <br>
+                                        <br>
+                                        <h3>End</h3>
+                                        <input type="datetime-local">
+                                        <br>
+                                        <br>
+                                        <input
+                                            type="checkbox"
+                                            value="student"
+                                            name="check"
+                                            id="chkbox"
+                                        >
+                                        <label for="chkbox">Restrict Students from viewing course details before term start date</label>
+                                        <br>
+                                        <input
+                                            type="checkbox"
+                                            value="student"
+                                            name="check"
+                                            id="chkbox2"
+                                        >
+                                        <label for="chkbox2">Restrict Students from viewing course details after term end date</label>
+                                        <br>
+                                    </td>
+                                </tr>
                                 <br>
-                                <label>Course participation is limited to term start and end date</label>
                                 <br>
-                                <br>
-                                <h3>Start</h3>
-                                <input type="date">
-                                <br>
-                                <br>
-                                <h3>End</h3>
-                                <input type="date">
-                                <br>
-                                <br>
-                                <input
-                                    type="checkbox"
-                                    value="student"
-                                    name="check"
-                                    id="chkbox"
-                                >
-                                <label for="chkbox">Restrict Students from viewing course details before term start date</label>
-                                <br>
-                                <input
-                                    type="checkbox"
-                                    value="student"
-                                    name="check"
-                                    id="chkbox2"
-                                >
-                                <label for="chkbox2">Restrict Students from viewing course details after term end date</label>
-                                <br>
-                            </td>
-                        </tr>
-                        <br>
-                        <br>
-                        <tr>
-                            <td>
-                                <label>Default due time:</label>
-                            </td>
-                            <td>
-                                <select>
-                                    <option value="COMEDY">Comedy</option>
-                                    <option value="DRAMA">Drama</option>
-                                    <option selected value="SCIFI">
-                                        Account Default
-                                    </option>
-                                    <option value="FANTASY">Configure</option>
-                                </select>
-                                <br>
-                                <label>This influence the user interface for setting due date</label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label>Language:</label>
-                            </td>
-                            <td>
-                                <select>
-                                    <option value="COMEDY">Comedy</option>
-                                    <option value="DRAMA">Drama</option>
-                                    <option selected value="SCIFI">
-                                        Not Set
-                                    </option>
-                                    <option value="FANTASY">Configure</option>
-                                </select>
-                                <br>
-                                <label>This will override any system language preferance</label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label>File Storage:</label>
-                            </td>
-                            <td>
-                                <label>10000 megabytes</label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label>Large Course:</label>
-                            </td>
-                            <td>
-                                <input
-                                    type="checkbox"
-                                    value="student"
-                                    name="check"
-                                    id="chkbox"
-                                >
-                                <label for="chkbox">Launch Speed Grader filtered by student group</label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label>Grading Scheme:</label>
-                            </td>
-                            <td>
-                                <input
-                                    type="checkbox"
-                                    value="student"
-                                    name="check"
-                                    id="chkbox"
-                                >
-                                <label for="chkbox">Enable course grading scheme</label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label>Licence:</label>
-                            </td>
-                            <td>
-                                <select>
-                                    <option value="COMEDY">Comedy</option>
-                                    <option value="DRAMA">Drama</option>
-                                    <option selected value="SCIFI">
-                                        Private (copyrighted)
-                                    </option>
-                                    <option value="FANTASY">Configure</option>
-                                </select>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label>File Copyright:</label>
-                            </td>
-                            <td>
-                                <input
-                                    type="checkbox"
-                                    value="student"
-                                    name="check"
-                                    id="chkbox"
-                                >
-                                <label for="chkbox">Copyright and licence information</label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label>Visibility:</label>
-                            </td>
-                            <td>
-                                <label>If you need to make your course public please contact admin</label>
-                                <br>
-                                <select>
-                                    <option value="COMEDY">Comedy</option>
-                                    <option value="DRAMA">Drama</option>
-                                    <option selected value="SCIFI">
-                                        Private (copyrighted)
-                                    </option>
-                                    <option value="FANTASY">Configure</option>
-                                </select>
-                                <br>
-                                <input
-                                    type="checkbox"
-                                    value="student"
-                                    name="check"
-                                    id="chkbox"
-                                >
-                                <label for="chkbox">Include this course in the public course index</label>
-                                <br>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label>Format:</label>
-                            </td>
-                            <td>
-                                <select>
-                                    <option value="COMEDY">Comedy</option>
-                                    <option value="DRAMA">Drama</option>
-                                    <option selected value="SCIFI">
-                                        On-Campus
-                                    </option>
-                                    <option value="FANTASY">Configure</option>
-                                </select>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label>Mastery Paths:</label>
-                            </td>
-                            <td>
-                                <input
-                                    type="checkbox"
-                                    value="student"
-                                    name="check"
-                                    id="chkbox"
-                                >
-                                <label for="chkbox">Enable indivisual learning path</label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label>Description:</label>
-                            </td>
-                            <td>
-                                <textarea></textarea>
-                                <br>
-                                <a href="#">More Options</a>
-                            </td>
-                        </tr>
+                                <tr>
+                                    <td>
+                                        <label>Default due time:</label>
+                                    </td>
+                                    <td>
+                                        <select class="form-select form-control">
+                                            <option value="COMEDY">Comedy</option>
+                                            <option value="DRAMA">Drama</option>
+                                            <option selected value="SCIFI">
+                                                Account Default
+                                            </option>
+                                            <option value="FANTASY">Configure</option>
+                                        </select>
+                                        <br>
+                                        <label>This influence the user interface for setting due date</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label>Language:</label>
+                                    </td>
+                                    <td>
+                                        <select class="form-select form-control">
+                                            <option value="COMEDY">Comedy</option>
+                                            <option value="DRAMA">Drama</option>
+                                            <option selected value="SCIFI">
+                                                Not Set
+                                            </option>
+                                            <option value="FANTASY">Configure</option>
+                                        </select>
+                                        <br>
+                                        <label>This will override any system language preferance</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label>File Storage:</label>
+                                    </td>
+                                    <td>
+                                        <label>10000 megabytes</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label>Large Course:</label>
+                                    </td>
+                                    <td>
+                                        <input
+                                            type="checkbox"
+                                            value="student"
+                                            name="check"
+                                            id="chkbox"
+                                        >
+                                        <label for="chkbox">Launch Speed Grader filtered by student group</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label>Grading Scheme:</label>
+                                    </td>
+                                    <td>
+                                        <input
+                                            type="checkbox"
+                                            value="student"
+                                            name="check"
+                                            id="chkbox"
+                                        >
+                                        <label for="chkbox">Enable course grading scheme</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label>Licence:</label>
+                                    </td>
+                                    <td>
+                                        <select class="form-select form-control">
+                                            <option value="COMEDY">Comedy</option>
+                                            <option value="DRAMA">Drama</option>
+                                            <option selected value="SCIFI">
+                                                Private (copyrighted)
+                                            </option>
+                                            <option value="FANTASY">Configure</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label>File Copyright:</label>
+                                    </td>
+                                    <td>
+                                        <input
+                                            type="checkbox"
+                                            value="student"
+                                            name="check"
+                                            id="chkbox"
+                                        >
+                                        <label for="chkbox">Copyright and licence information</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label>Visibility:</label>
+                                    </td>
+                                    <td>
+                                        <label>If you need to make your course public please contact admin</label>
+                                        <br>
+                                        <select class="form-select form-control " disabled>
+                                            <option value="COMEDY">Comedy</option>
+                                            <option value="DRAMA">Drama</option>
+                                            <option selected value="SCIFI">
+                                                Course
+                                            </option>
+                                            <option value="FANTASY">Configure</option>
+                                        </select>
+                                        <br>
+                                        <input
+                                            type="checkbox"
+                                            value="student"
+                                            name="check"
+                                            id="chkbox"
+                                        >
+                                        <label for="chkbox">Include this course in the public course index</label>
+                                        <br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label>Format:</label>
+                                    </td>
+                                    <td>
+                                        <select class="form-select form-control">
+                                            <option value="COMEDY">Comedy</option>
+                                            <option value="DRAMA">Drama</option>
+                                            <option selected value="SCIFI">
+                                                On-Campus
+                                            </option>
+                                            <option value="FANTASY">Configure</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label>Mastery Paths:</label>
+                                    </td>
+                                    <td>
+                                        <input
+                                            type="checkbox"
+                                            value="student"
+                                            name="check"
+                                            id="chkbox"
+                                        >
+                                        <label for="chkbox">Enable indivisual learning path</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label>Description:</label>
+                                    </td>
+                                    <td>
+                                        <textarea></textarea>
+                                        <br>
+                                        <a href="#">More Options</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
                     </table>
-                </td>
-            </table>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col d-flex justify-content-end">
+                                <button style="background-color: red; color: white;" class="btn btn-primary">Update Course Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </body>
     </html>

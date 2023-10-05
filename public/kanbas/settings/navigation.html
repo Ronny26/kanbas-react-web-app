@@ -1,244 +1,427 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <style>
-        table {
-          
-            width: 100%;
-        }
-        td {
-            
-            vertical-align: top; /* Align content to the top */
-        }
-        </style>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        >
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <link href="../../vendors/fontawesome/css copy/font-awesome.css" rel="stylesheet">
+        <link href="../../style.css" rel="stylesheet">
     </head>
     <body>
-        <table>
-            <tr class="row">
-                <!-- Apply the "row" class to all rows -->
-                <!-- First Column - Kanbas Navigation -->
-                <td>
-                    <ul class="navigation">
-                        <li>
-                            <a href="../profile/index.html">Account</a>
-                        </li>
-                        <li>
-                            <a href="#">Dashboard</a>
-                        </li>
-                        <li>
-                            <a href="coursedetails.html">Courses</a>
-                        </li>
-                        <li>
-                            <a href="#">Calendar</a>
-                        </li>
-                        <li>
-                            <a href="#">Inbox</a>
-                        </li>
-                        <li>
-                            <a href="#">History</a>
-                        </li>
-                        <li>
-                            <a href="#">Studio</a>
-                        </li>
-                        <li>
-                            <a href="#">Commons</a>
-                        </li>
-                        <li>
-                            <a href="#">Help</a>
-                        </li>
-                    </ul>
-                </td>
-                <!-- Second Column - Course Navigation -->
-                <td>
-                    <ul class="navigation">
-                        <li>
-                            <a href="../home.html">Home</a>
-                        </li>
-                        <li>
-                            <a href="#">Modules</a>
-                        </li>
-                        <li>
-                            <a href="#">Piazza</a>
-                        </li>
-                        <li>
-                            <a href="#">Zoom Meeting</a>
-                        </li>
-                        <li>
-                            <a href="../assignments/assignments.html">Assignment</a>
-                        </li>
-                        <li>
-                            <a href="#">Quizes</a>
-                        </li>
-                        <li>
-                            <a href="../grades.html">Grades</a>
-                        </li>
-                        <li>
-                            <a href="#">People</a>
-                        </li>
-                        <li>
-                            <a href="#">Panapto Video</a>
-                        </li>
-                        <li>
-                            <a href="#">Discussion</a>
-                        </li>
-                        <li>
-                            <a href="#">Announcement</a>
-                        </li>
-                        <li>
-                            <a href="#">Pages</a>
-                        </li>
-                        <li>
-                            <a href="#">Files</a>
-                        </li>
-                        <li>
-                            <a href="#">Rubric</a>
-                        </li>
-                        <li>
-                            <a href="#">Outcomes</a>
-                        </li>
-                        <li>
-                            <a href="#">Collaborations</a>
-                        </li>
-                        <li>
-                            <a href="#">Syllabus</a>
-                        </li>
-                        <li>
-                            <a href="#">Settings</a>
-                        </li>
-                    </ul>
-                </td>
-                <td>
-                    <a href="coursedetails.html">Course Details</a>
-                    <a href="coursedetails.html">Sections</a>
-                    <a href="navigation.html">Navigation</a>
-                    <a href="coursedetails.html">Apps</a>
-                    <a href="coursedetails.html">Feature Options</a>
-                    <a href="coursedetails.html">Integration</a>
-                    <br>
-                    <br>
-                    <label>Drag and Drop item to reorder them in the course navigation.</label>
-                    <br>
-                    <br>
-                    <ul>
-                        <li>
-                            <a href="../home.html">Home</a>
-                        </li>
-                        <li>
-                            <a href="#">Modules</a>
-                        </li>
-                        <li>
-                            <a href="#">Piazza</a>
-                        </li>
-                        <li>
-                            <a href="#">Zoom Meetings</a>
-                        </li>
-                        <li>
-                            <a href="#">Assignmnets</a>
-                        </li>
-                        <li>
-                            <a href="#">Quizzes</a>
-                        </li>
-                        <li>
-                            <a href="#">Grades</a>
-                        </li>
-                        <li>
-                            <a href="#">People</a>
-                        </li>
-                        <li>
-                            <a href="#">Panatop Video</a>
-                        </li>
-                    </ul>
-                    <label>Drag items here to hide them from students</label>
-                    <br>
-                    <label>
-                        Disabling most pages will cause students who visit those pages to be redirected
-                        <br>
-                        to the course home page
-                    </label>
-                    <br>
-                    <ul>
-                        <li>
-                            <a href="#">Chat</a>
+        <nav class="navbar d-sm-none">
+            <div class="navbar-icon">
+                <a href="../kanbas.html">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div class="navbar-title" style="display: block; text-align: center;">
+                CS5200.MERGED.202330
+                <br>
+                HOME
+            </div>
+            <div class="navbar-icon">
+                <a href="../course.html">
+                    <i class="fa fa-binoculars" aria-hidden="true"></i>
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </a>
+            </div>
+        </nav>
+        <div class="wd-flex-title-container wd-flex-title-container-home">
+            <div class=" d-none d-sm-block">
+                <img
+                    src="https://instructure-uploads.s3.amazonaws.com/account_145230000000000001/attachments/949/NU_MonoLVX_RGB_RW.png"
+                    alt="Description_of_the_image"
+                    width="80"
+                    height="80"
+                >
+            </div>
+            <div class="wd-flex-grow-1 d-none d-sm-block">
+                <i class="fa fa-bars" aria-hidden="true">
+                    <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="#">CS5200.MERGED.202330</a>
+                            </li>
+                            <li class="breadcrumb-item active" aria-current="page">Settings</li>
+                        </ol>
+                    </nav>
+                </i>
+                <hr style="margin: 0px; margin-left:35px;">
+            </div>
+        </div>
+        <div class="wd-flex-row-cotainer">
+            <div class="wd-color-black d-none d-sm-block">
+                <ul class="wd-kanbas-navigation">
+                    <li>
+                        <a href="../profile/index.html">
+                            <i class="fa fa-user" aria-hidden="true" style="color: white;"></i>
+                            Account
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../dashboard/index.html">
+                            <i class="fa fa-tachometer" aria-hidden="true"></i>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li class="wd-active">
+                        <a href="../home.html">
+                            <i class="fa fa-book" aria-hidden="true"></i>
+                            Courses
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                            Calendar
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-inbox" aria-hidden="true"></i>
+                            Inbox
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-history" aria-hidden="true"></i>
+                            History
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-television" aria-hidden="true"></i>
+                            Studio
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-sign-out" aria-hidden="true"></i>
+                            Commons
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-question-circle" aria-hidden="true"></i>
+                            Help
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="d-none d-sm-block">
+                <span class="section-tabs-header-subtitle ellipsis">202410_2 Fall 2023 Semest...</span>
+                <ul class="wd-course-navigation">
+                    <li>
+                        <a href="../home.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Modules</a>
+                    </li>
+                    <li>
+                        <a href="#">Piazza</a>
+                    </li>
+                    <li>
+                        <a href="#">Zoom Meeting</a>
+                    </li>
+                    <li>
+                        <a href="../assignments/assignments.html">Assignment</a>
+                    </li>
+                    <li>
+                        <a href="#">Quizes</a>
+                    </li>
+                    <li>
+                        <a href="../grades.html">Grades</a>
+                    </li>
+                    <li>
+                        <a href="#">People</a>
+                    </li>
+                    <li>
+                        <a href="#">Panapto Video</a>
+                    </li>
+                    <li style="width: inherit">
+                        <div>
+                            <a href="#">
+                                Discussion
+                                <i class="fa fa-eye-slash float-end" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <li style="width: inherit">
+                        <div>
+                            <a href="#">
+                                Announcements
+                                <i class="fa fa-eye-slash float-end" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <li style="width: inherit">
+                        <div>
+                            <a href="#">
+                                Pages
+                                <i class="fa fa-eye-slash float-end" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <li style="width: inherit">
+                        <div>
+                            <a href="#">
+                                Files
+                                <i class="fa fa-eye-slash float-end" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <li style="width: inherit">
+                        <div>
+                            <a href="#">
+                                Rubrics
+                                <i class="fa fa-eye-slash float-end" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <li style="width: inherit">
+                        <div>
+                            <a href="#">
+                                Outcome
+                                <i class="fa fa-eye-slash float-end" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <li style="width: inherit">
+                        <div>
+                            <a href="#">
+                                Collaboration
+                                <i class="fa fa-eye-slash float-end" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <li style="width: inherit">
+                        <div>
+                            <a href="#">
+                                Syllabus
+                                <i class="fa fa-eye-slash float-end" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="wd-active">
+                        <a href="../settings/coursedetails.html">Settings</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="wd-flex-grow-1 course-det">
+                <table class="table">
+                    <tr class="row">
+                        <td style="margin-left: 50px;" class="nav-td">
+                            <a href="coursedetails.html">Course Details</a>
+                            <a href="coursedetails.html">Sections</a>
+                            <a href="navigation.html">Navigation</a>
+                            <a href="coursedetails.html">Apps</a>
+                            <a href="coursedetails.html">Feature Options</a>
+                            <a href="coursedetails.html">Integration</a>
                             <br>
-                            <label>Page disabled, won't appear in navigation</label>
-                        </li>
-                        <li>
-                            <a href="#">SCORM</a>
-                            <br>
-                            <label>Page disabled, won't appear in navigation</label>
-                        </li>
-                        <li>
-                            <a href="#">Attendance</a>
-                            <br>
-                            <label>Page disabled, won't appear in navigation</label>
-                        </li>
-                        <li>
-                            <a href="#">Barnes and Noble Bookshop</a>
-                            <br>
-                            <label>Page disabled, won't appear in navigation</label>
-                        </li>
-                        <li>
-                            <a href="#">Degication</a>
-                            <br>
-                            <label>Page disabled, won't appear in navigation</label>
-                        </li>
-                        <li>
-                            <a href="#">Top Hat</a>
-                            <br>
-                            <label>Page disabled, won't appear in navigation</label>
-                        </li>
-                        <li>
-                            <a href="#">Syllabus</a>
-                            <br>
-                            <label>Page disabled, won't appear in navigation</label>
-                        </li>
-                        <li>
-                            <a href="#">Perusal</a>
-                            <br>
-                            <label>Page disabled, won't appear in navigation</label>
-                        </li>
-                        <li>
-                            <a href="#">Microsoft Team Meeting</a>
-                            <br>
-                            <label>Page disabled, won't appear in navigation</label>
-                        </li>
-                        <li>
-                            <a href="#">FACT Reporting and Photo Roster</a>
-                            <br>
-                            <label>Page disabled, won't appear in navigation</label>
-                        </li>
-                        <li>
-                            <a href="#">progress Report</a>
-                            <br>
-                            <label>Page disabled, won't appear in navigation</label>
-                        </li>
-                        <li>
-                            <a href="#">Microsoft Team to Canvas</a>
-                            <br>
-                            <label>Page disabled, won't appear in navigation</label>
-                        </li>
-                        <li>
-                            <a href="#">VHL Central</a>
-                            <br>
-                            <label>Page disabled, won't appear in navigation</label>
-                        </li>
-                        <li>
-                            <a href="#">Gradescope</a>
-                            <br>
-                            <label>Page disabled, won't appear in navigation</label>
-                        </li>
-                        <li>
-                            <a href="#">Credentials</a>
-                            <br>
-                            <label>Page disabled, won't appear in navigation</label>
-                        </li>
-                        <li>
-                            <a href="#">iClicker</a>
-                            <br>
-                            <label>Page disabled, won't appear in navigation</label>
-                        </li>
-                    </ul>
-                </td>
-            </table>
-        </body>
-    </html>
+                            <hr>
+                            <label>Drag and Drop item to reorder them in the course navigation.</label>
+                            <div class="list-group list-group-s" style="margin-right: 600px;">
+                                <a href="../home.html" class="list-group-item list-group-item-action list-group-border " aria-current="true">
+                                    <span style="margin-left: 10px;">Home</span>
+                                    <span class="float-md-end">
+                                        <i class="fa fa-ellipsis-v " aria-hidden="true" style="justify-content: flex-start; margin-right: 0px;"></i>
+                                    </span>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action list-group-border" aria-current="true">
+                                    <span style="margin-left: 10px;">Module</span>
+                                    <span class="float-md-end">
+                                        <i class="fa fa-ellipsis-v " aria-hidden="true" style="justify-content: flex-start; margin-right: 0px;"></i>
+                                    </span>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action list-group-border" aria-current="true">
+                                    <span style="margin-left: 10px;">Piazza</span>
+                                    <span class="float-md-end">
+                                        <i class="fa fa-ellipsis-v " aria-hidden="true" style="justify-content: flex-start; margin-right: 0px;"></i>
+                                    </span>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action list-group-border" aria-current="true">
+                                    <span style="margin-left: 10px;">Zoom Meetings</span>
+                                    <span class="float-md-end">
+                                        <i class="fa fa-ellipsis-v " aria-hidden="true" style="justify-content: flex-start; margin-right: 0px;"></i>
+                                    </span>
+                                </a>
+                                <a href="../assignments/assignments.html" class="list-group-item list-group-item-action list-group-border" aria-current="true">
+                                    <span style="margin-left: 10px;">Assignments</span>
+                                    <span class="float-md-end">
+                                        <i class="fa fa-ellipsis-v " aria-hidden="true" style="justify-content: flex-start; margin-right: 0px;"></i>
+                                    </span>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action list-group-border" aria-current="true">
+                                    <span style="margin-left: 10px;">Quizes</span>
+                                    <span class="float-md-end">
+                                        <i class="fa fa-ellipsis-v " aria-hidden="true" style="justify-content: flex-start; margin-right: 0px;"></i>
+                                    </span>
+                                </a>
+                                <a href="../grades.html" class="list-group-item list-group-item-action list-group-border" aria-current="true">
+                                    <span style="margin-left: 10px;">Grades</span>
+                                    <span class="float-md-end">
+                                        <i class="fa fa-ellipsis-v " aria-hidden="true" style="justify-content: flex-start; margin-right: 0px;"></i>
+                                    </span>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action list-group-border" aria-current="true">
+                                    <span style="margin-left: 10px;">People</span>
+                                    <span class="float-md-end">
+                                        <i class="fa fa-ellipsis-v " aria-hidden="true" style="justify-content: flex-start; margin-right: 0px;"></i>
+                                    </span>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action " aria-current="true">
+                                    <span style="margin-left: 10px;">Panatop Video</span>
+                                    <span class="float-md-end">
+                                        <i class="fa fa-ellipsis-v " aria-hidden="true" style="justify-content: flex-start; margin-right: 0px;"></i>
+                                    </span>
+                                </a>
+                                <br>
+                                <label>Drag items here to hide them from students</label>
+                                <label>
+                                    Disabling most pages will cause students who visit those pages to be redirected
+                                    <br>
+                                    to the course home page
+                                </label>
+                                <a href="#" class="list-group-item list-group-item-action list-group-border " aria-current="true">
+                                    <span style="margin-left: 10px;">
+                                        Chat
+                                    </span>
+                                    <span class="float-md-end">
+                                        <i class="fa fa-ellipsis-v " aria-hidden="true" style="justify-content: flex-start; margin-right: 0px;"></i>
+                                    </span>
+                                    <br>
+                                    <label style="margin-left: 30px; font-size: small">Page disabled, won't appear in navigation</label>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action list-group-border" aria-current="true">
+                                    <span style="margin-left: 10px;">SCORM</span>
+                                    <span class="float-md-end">
+                                        <i class="fa fa-ellipsis-v " aria-hidden="true" style="justify-content: flex-start; margin-right: 0px;"></i>
+                                    </span>
+                                    <br>
+                                    <label style="margin-left: 30px; font-size: small">Page disabled, won't appear in navigation</label>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action list-group-border" aria-current="true">
+                                    <span style="margin-left: 10px;">Attendance</span>
+                                    <span class="float-md-end">
+                                        <i class="fa fa-ellipsis-v " aria-hidden="true" style="justify-content: flex-start; margin-right: 0px;"></i>
+                                    </span>
+                                    <br>
+                                    <label style="margin-left: 30px; font-size: small">Page disabled, won't appear in navigation</label>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action list-group-border" aria-current="true">
+                                    <span style="margin-left: 10px;">Barnes and Noble Bookshop</span>
+                                    <span class="float-md-end">
+                                        <i class="fa fa-ellipsis-v " aria-hidden="true" style="justify-content: flex-start; margin-right: 0px;"></i>
+                                    </span>
+                                    <br>
+                                    <label style="margin-left: 30px; font-size: small">Page disabled, won't appear in navigation</label>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action list-group-border" aria-current="true">
+                                    <span style="margin-left: 10px;">Degication</span>
+                                    <span class="float-md-end">
+                                        <i class="fa fa-ellipsis-v " aria-hidden="true" style="justify-content: flex-start; margin-right: 0px;"></i>
+                                    </span>
+                                    <br>
+                                    <label style="margin-left: 30px; font-size: small">Page disabled, won't appear in navigation</label>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action list-group-border" aria-current="true">
+                                    <span style="margin-left: 10px;">Top Hat</span>
+                                    <span class="float-md-end">
+                                        <i class="fa fa-ellipsis-v " aria-hidden="true" style="justify-content: flex-start; margin-right: 0px;"></i>
+                                    </span>
+                                    <br>
+                                    <label style="margin-left: 30px; font-size: small">Page disabled, won't appear in navigation</label>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action list-group-border" aria-current="true">
+                                    <span style="margin-left: 10px;">Syllabus</span>
+                                    <span class="float-md-end">
+                                        <i class="fa fa-ellipsis-v " aria-hidden="true" style="justify-content: flex-start; margin-right: 0px;"></i>
+                                    </span>
+                                    <br>
+                                    <label style="margin-left: 30px; font-size: small">Page disabled, won't appear in navigation</label>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action list-group-border" aria-current="true">
+                                    <span style="margin-left: 10px;">Perusal</span>
+                                    <span class="float-md-end">
+                                        <i class="fa fa-ellipsis-v " aria-hidden="true" style="justify-content: flex-start; margin-right: 0px;"></i>
+                                    </span>
+                                    <br>
+                                    <label style="margin-left: 30px; font-size: small">Page disabled, won't appear in navigation</label>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action " aria-current="true">
+                                    <span style="margin-left: 10px;">Microsoft Team Meeting</span>
+                                    <span class="float-md-end">
+                                        <i class="fa fa-ellipsis-v " aria-hidden="true" style="justify-content: flex-start; margin-right: 0px;"></i>
+                                    </span>
+                                    <br>
+                                    <label style="margin-left: 30px; font-size: small">Page disabled, won't appear in navigation</label>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action " aria-current="true">
+                                    <span style="margin-left: 10px;">FACT Reporting and Photo Roster</span>
+                                    <span class="float-md-end">
+                                        <i class="fa fa-ellipsis-v " aria-hidden="true" style="justify-content: flex-start; margin-right: 0px;"></i>
+                                    </span>
+                                    <br>
+                                    <label style="margin-left: 30px; font-size: small">Page disabled, won't appear in navigation</label>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action " aria-current="true">
+                                    <span style="margin-left: 10px;">Progress Report</span>
+                                    <span class="float-md-end">
+                                        <i class="fa fa-ellipsis-v " aria-hidden="true" style="justify-content: flex-start; margin-right: 0px;"></i>
+                                    </span>
+                                    <br>
+                                    <label style="margin-left: 30px; font-size: small">Page disabled, won't appear in navigation</label>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action " aria-current="true">
+                                    <span style="margin-left: 10px;">Microsoft Team to Canvas</span>
+                                    <span class="float-md-end">
+                                        <i class="fa fa-ellipsis-v " aria-hidden="true" style="justify-content: flex-start; margin-right: 0px;"></i>
+                                    </span>
+                                    <br>
+                                    <label style="margin-left: 30px; font-size: small">Page disabled, won't appear in navigation</label>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action " aria-current="true">
+                                    <span style="margin-left: 10px;">VHL Central</span>
+                                    <span class="float-md-end">
+                                        <i class="fa fa-ellipsis-v " aria-hidden="true" style="justify-content: flex-start; margin-right: 0px;"></i>
+                                    </span>
+                                    <br>
+                                    <label style="margin-left: 30px; font-size: small">Page disabled, won't appear in navigation</label>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action " aria-current="true">
+                                    <span style="margin-left: 10px;">Gradescope</span>
+                                    <span class="float-md-end">
+                                        <i class="fa fa-ellipsis-v " aria-hidden="true" style="justify-content: flex-start; margin-right: 0px;"></i>
+                                    </span>
+                                    <br>
+                                    <label style="margin-left: 30px; font-size: small">Page disabled, won't appear in navigation</label>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action " aria-current="true">
+                                    <span style="margin-left: 10px;">Credentials</span>
+                                    <span class="float-md-end">
+                                        <i class="fa fa-ellipsis-v " aria-hidden="true" style="justify-content: flex-start; margin-right: 0px;"></i>
+                                    </span>
+                                    <br>
+                                    <label style="margin-left: 30px; font-size: small">Page disabled, won't appear in navigation</label>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action " aria-current="true">
+                                    <span style="margin-left: 10px;">iClicker</span>
+                                    <span class="float-md-end">
+                                        <i class="fa fa-ellipsis-v " aria-hidden="true" style="justify-content: flex-start; margin-right: 0px;"></i>
+                                    </span>
+                                    <br>
+                                    <label style="margin-left: 30px; font-size: small">Page disabled, won't appear in navigation</label>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <button style="margin-left: 75px; color: white; background-color: red;">SAVE</button>
+            </div>
+        </div>
+    </body>
+</html>
