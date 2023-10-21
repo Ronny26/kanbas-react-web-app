@@ -1,0 +1,86 @@
+.wd-flex-title-container{
+    display: flex;
+    flex-direction: row;
+  }
+  .wd-flex-title-container img{
+   background-color: black;
+  }
+  .wd-flex-title-container i{
+    color: red;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    font-size: 2em;
+   }
+   .wd-flex-title-container-home i{
+    display: flex;
+   }
+   .wd-flex-title-container nav{
+    font-size: 20px;
+    margin-top: 3.2px;
+   
+   }
+  .wd-flex-title-container a{
+      display: block;
+      overflow: hidden;
+  }
+  .wd-flex-title-container label{
+    margin-top: 20px;
+    padding-bottom: 10px;
+    font-size: 1.8em;
+  }
+  .wd-flex-grow-1 {
+    flex-grow: 1;
+    margin-left: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+  }
+  
+  .wd-flex-grow-1 a{
+    display: inline;
+    text-decoration: none;
+    color: red;
+    margin-left: 20px;
+  }
+
+  .wd-flex-grow-1 button{
+     display: flex end;
+  }  
+  .wd-course-navigation {
+    background-color: white;
+    list-style: none;
+    padding: 0px;
+    width: 170px;
+    margin: 0px;
+    
+    padding-left: 20px;
+  }
+  .wd-course-navigation li{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .wd-course-navigation a{
+    color: red;
+    text-decoration: none;
+  }
+  .wd-course-navigation a i{
+    color: black;
+    text-decoration: none;
+  }
+
+  .wd-course-navigation li.wd-active{
+    border-left: 2px solid black ;
+  }
+
+  .wd-course-navigation li.wd-active a{
+    color: black;
+  }
+
+  .wd-icon {
+    font-size: 1em;
+  }
