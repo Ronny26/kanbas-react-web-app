@@ -1,0 +1,31 @@
+[
+    {
+      "_id": "RS101",
+      "name": "CS 5640 Web Development Course",
+      "number": "RS4550",
+      "startDate": "2023-01-10",
+      "endDate": "2023-05-15"
+    },
+    {
+      "_id": "RS102",
+      "name": "CS 5641 React Development Course",
+      "number": "RS4560",
+      "startDate": "2023-01-10",
+      "endDate": "2023-05-15"
+    },
+    {
+      "_id": "RS103",
+      "name": "CS 5642 Database Development Course",
+      "number": "RS4570",
+      "startDate": "2023-01-10",
+      "endDate": "2023-05-15"
+    },
+
+    {
+      "_id": "RS104",
+      "name": "CS 5643 Program Development Course",
+      "number": "RS4570",
+      "startDate": "2023-01-10",
+      "endDate": "2023-05-15"
+    }
+  ]
