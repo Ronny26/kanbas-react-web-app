@@ -25,7 +25,7 @@ function CourseNavigation () {
   const { courseId } = useParams()
   const { pathname } = useLocation()
   return (
-    <div className='wd-course-navigation '>
+    <div className='wd-course-navigation d-none d-sm-block'>
       <div className='list-group' style={{ width: 150 }}>
         <span class='section-tabs-header-subtitle ellipsis'>
           202410_2 Fall 2023 Semest...

@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import db from '../../Database'
 import { AiFillCheckCircle, AiOutlineEnter } from 'react-icons/ai'
 import { FaEllipsisV } from 'react-icons/fa'
 import { HiPlusSm } from 'react-icons/hi'
 import './index.css'
+import AssignmentEditor from './AssignmentEditor'
 
 function Assignments () {
   const { courseId } = useParams()
@@ -12,6 +13,7 @@ function Assignments () {
   const courseAssignments = assignments.filter(
     assignment => assignment.course === courseId
   )
+  const [showEditor, setShowEditor] = useState(false)
   return (
     <div>
       <div
@@ -43,12 +45,14 @@ function Assignments () {
               color: 'white',
               marginLeft: '10px'
             }}
+            onClick={() => setShowEditor(true)}
           >
             <i
               className='fa fa-plus '
               aria-hidden='true'
               style={{ marginRight: '5px' }}
             />
+            {showEditor && <AssignmentEditor />}
             <HiPlusSm style={{ color: 'white', marginBottom: '4px' }} />
             Assignment
           </button>

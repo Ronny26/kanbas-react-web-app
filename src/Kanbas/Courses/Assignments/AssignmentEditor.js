@@ -1,34 +1,42 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { useNavigate, useParams, Link } from 'react-router-dom'
 import db from '../../Database'
 
 function AssignmentEditor () {
-  const { assignmentId } = useParams()
-  const assignment = db.assignments.find(
-    assignment => assignment._id === assignmentId
-  )
-
-  const { courseId } = useParams()
+  const { assignmentId, courseId } = useParams()
+  const [title, setTitle] = useState('') // to manage the title input value
   const navigate = useNavigate()
+
+  useEffect(() => {
+    if (assignmentId) {
+      const fetchedAssignment = db.assignments.find(
+        assignment => assignment._id === assignmentId
+      )
+      if (fetchedAssignment) {
+        setTitle(fetchedAssignment.title)
+      }
+    }
+  }, [assignmentId])
+
   const handleSave = () => {
     console.log('Actually saving assignment TBD in later assignments')
     navigate(`/Kanbas/Courses/${courseId}/Assignments`)
   }
+
   return (
     <div>
       <h2>Assignment Name</h2>
-      <input value={assignment.title} className='form-control mb-2' />
+      <input
+        value={title}
+        onChange={e => setTitle(e.target.value)}
+        className='form-control mb-2'
+      />
       <Link
         to={`/Kanbas/Courses/${courseId}/Assignments`}
         className='btn btn-danger'
       >
         Cancel
       </Link>
-      {/* <Link onClick={handleSave}
-            to={`/Kanbas/Courses/${courseId}/Assignments`}
-            className="btn btn-success me-2">
-        Save
-      </Link> */}
       <button onClick={handleSave} className='btn btn-success me-2'>
         Save
       </button>
