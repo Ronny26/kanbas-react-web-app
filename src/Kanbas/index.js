@@ -14,23 +14,31 @@ function Kanbas () {
   const URL = 'http://localhost:4000/api/courses'
   const [courses, setCourses] = useState([])
   const [course, setCourse] = useState({
+    _id: '0',
     name: 'New Course',
     number: 'New Number',
     startDate: '2023-09-10',
     endDate: '2023-12-15'
   })
-  const updateCourse = async course => {
+  const updateCourse = async () => {
     const response = await axios.put(`${URL}/${course._id}`, course)
-    console.log(course._id)
+    console.log(course)
     setCourses(
       courses.map(c => {
         if (c._id === course._id) {
-          return course._id
+          return course
         } else {
           return c
         }
       })
     )
+    setCourse({
+      _id: '0',
+      name: '',
+      number: '',
+      startDate: '2023-09-10',
+      endDate: '2023-12-15'
+    })
   }
   const deleteCourse = async course => {
     const response = await axios.delete(`${URL}/${course}`)

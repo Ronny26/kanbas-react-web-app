@@ -101,7 +101,7 @@ function Dashboard ({
                     >
                       Edit
                     </button>{' '}
-                    <button onClick={() => updateCourse(course)}>Update</button>
+                    <button onClick={updateCourse}>Update</button>
                   </div>
                 </div>
               </div>
