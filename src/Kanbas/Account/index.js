@@ -1,14 +1,9 @@
 import './index.css'
-import db from '../Database'
+
 import { FaUserCircle } from 'react-icons/fa'
 import { FaBars } from 'react-icons/fa'
 
 function Account () {
-  const users = db.users
-  const linkToIconMap = {
-    User: <FaUserCircle className='wd-icon' />
-  }
-
   return (
     <div>
       <div className='wd-flex-title-container'>
