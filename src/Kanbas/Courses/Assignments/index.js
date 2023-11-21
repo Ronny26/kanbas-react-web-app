@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import db from '../../Database'
-import { AiFillCheckCircle, AiOutlineEnter } from 'react-icons/ai'
+
 import { FaEllipsisV } from 'react-icons/fa'
 import { HiPlusSm } from 'react-icons/hi'
 import './index.css'
