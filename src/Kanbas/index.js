@@ -1,41 +1,54 @@
-import { Route, Routes, Navigate } from 'react-router'
+import { Route, Routes, Navigate, useParams } from 'react-router'
 import KanbasNavigation from './KanbasNavigation'
 import Courses from './Courses'
 import Account from './Account'
 import Dashboard from './Dashboard'
-import db from './Database'
-import { useState } from 'react'
+
+import { useState, useEffect } from 'react'
 import store from './store'
 import { Provider } from 'react-redux'
+import axios from 'axios'
 
 function Kanbas () {
-  const [courses, setCourses] = useState(db.courses)
+  const { courseId } = useParams()
+  const URL = 'http://localhost:4000/api/courses'
+  const [courses, setCourses] = useState([])
   const [course, setCourse] = useState({
     name: 'New Course',
     number: 'New Number',
     startDate: '2023-09-10',
     endDate: '2023-12-15'
   })
-  const addNewCourse = () => {
-    setCourses([
-      ...courses,
-      { ...course, _id: new Date().getTime().toString() }
-    ])
-  }
-  const deleteCourse = courseId => {
-    setCourses(courses.filter(course => course._id !== courseId))
-  }
-  const updateCourse = () => {
+  const updateCourse = async course => {
+    const response = await axios.put(`${URL}/${course._id}`, course)
+    console.log(course._id)
     setCourses(
       courses.map(c => {
         if (c._id === course._id) {
-          return course
+          return course._id
         } else {
           return c
         }
       })
     )
   }
+  const deleteCourse = async course => {
+    const response = await axios.delete(`${URL}/${course}`)
+    setCourses(courses.filter(c => c._id !== course))
+  }
+  const addNewCourse = async () => {
+    const response = await axios.post(URL, course)
+    setCourses([response.data, ...courses])
+    setCourse({ name: '' })
+  }
+
+  const findAllCourses = async () => {
+    const response = await axios.get(URL)
+    setCourses(response.data)
+  }
+  useEffect(() => {
+    findAllCourses()
+  }, [])
 
   return (
     <Provider store={store}>
@@ -55,8 +68,8 @@ function Kanbas () {
                   course={course}
                   setCourse={setCourse}
                   addNewCourse={addNewCourse}
-                  deleteCourse={deleteCourse}
                   updateCourse={updateCourse}
+                  deleteCourse={deleteCourse}
                 />
               }
             />
