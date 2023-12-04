@@ -23,13 +23,13 @@ function Navbar ()  {
         <li>
           <Link to="/project/signin"
            className={`nav-link ${pathname.includes('signin') ? 'active' : ''}`}>
-            Signin
+            SignIn
           </Link>
         </li>
         <li>
           <Link  to="/project/signup"
            className={`nav-link ${pathname.includes('signup') ? 'active' : ''}`}>
-            Signup
+            SignUp
           </Link>
         </li>
         <li>
