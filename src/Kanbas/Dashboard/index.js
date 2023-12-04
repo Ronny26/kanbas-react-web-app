@@ -87,6 +87,7 @@ function Dashboard ({
                       style={{ flexGrow: '1' }}
                       onClick={event => {
                         event.preventDefault()
+
                         deleteCourse(course._id)
                       }}
                     >

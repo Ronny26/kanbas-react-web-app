@@ -18,8 +18,10 @@ import Grades from './Grades'
 import Breadcrumb from './breadcrumb'
 function Courses () {
   const { courseId } = useParams()
+
   const URL = 'http://localhost:4000/api/courses'
   const [course, setCourse] = useState({})
+
   const findCourseById = async courseId => {
     const response = await axios.get(`${URL}/${courseId}`)
     setCourse(response.data)

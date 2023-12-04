@@ -20,9 +20,10 @@ function Kanbas () {
     startDate: '2023-09-10',
     endDate: '2023-12-15'
   })
+
   const updateCourse = async () => {
     const response = await axios.put(`${URL}/${course._id}`, course)
-    console.log(course)
+    console.log(response)
     setCourses(
       courses.map(c => {
         if (c._id === course._id) {
@@ -47,7 +48,13 @@ function Kanbas () {
   const addNewCourse = async () => {
     const response = await axios.post(URL, course)
     setCourses([response.data, ...courses])
-    setCourse({ name: '' })
+    setCourse({
+      _id: '0',
+      name: '',
+      number: '',
+      startDate: '2023-09-10',
+      endDate: '2023-12-15'
+    })
   }
 
   const findAllCourses = async () => {
